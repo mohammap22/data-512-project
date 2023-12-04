@@ -26,10 +26,13 @@ Python 3.x, matplotlib, NumPy, Requests, defaultdict, and Pandas
 The data is sourced from Wikipedia under the Wikimedia Foundation's terms. Please review the Wikimedia Foundation REST API [terms of use](https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions) for more details.
 
 ## API Documentation
-The data is acquired using the [Wikipedia Pageviews API](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews). For additional details on how the API works, please refer to the official [API documentation](https://wikimedia.org/api/rest_v1/#/Pageviews%20data).
+As mentioned previously, the EPA and US Census APIs were used, here are the links to their information pages:
+1. [EPA](https://aqs.epa.gov/aqsweb/documents/data_api.html)
+2. [US Census](https://www.census.gov/data/developers/guidance/api-user-guide.html)
+
 
 ## Known Issues and Special Considerations
 The created smoke estimation values are based upon historic wildfire data which only contain the size, year, and location of the fire. Thus we are missing wind data, which is very important when trying to track wildfire smoke. The mortality data is sourced from mortality data in the Front Range of Colorado, while we are only looking at Larimer County, which is only a portion of the Front Range. 
 
 ## Running the Code
-Download datasets 1 and 4. Move the historic smoke data (dataset 1) into the `smoke_estimates_and_AQI` directory. Move the county-wise smoke data into the `smoke_data` directory. After downloading the necessary libraries mentioned in the `Requirements` section, incrementally run either `mortality_estimation` or `home_price_and_smoke` to view results. 
+Download datasets 1 and 4. Move the historic smoke data (dataset 1) into the `smoke_estimates_and_AQI` directory. Create a subdirectory called `smoke_data` and move the county-wise smoke data into the `smoke_data` directory. After downloading the necessary libraries mentioned in the `Requirements` section, incrementally run either `mortality_estimation` or `home_price_and_smoke` to view results. 
