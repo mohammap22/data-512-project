@@ -1,7 +1,7 @@
 
 # Larimer County Wildfire Smoke Impact Analysis on Population Health
 ## Overview
-This project aims to analyze the relationship between wildfire smoke and respiratory mortality in Larimer County CO. This project is broken down by a handful of notebook files written in Python, which illustrate the data acquisition, analysis, and model creation. 
+This project aims to analyze the relationship between wildfire smoke and respiratory mortality in Larimer County CO. This project is broken down by a handful of notebook files written in Python, which illustrate the data acquisition, analysis, and model creation. This project is split up into two major sections: 1) Proving that US citizens do not care about wildfire smoke. And 2) How wildfire smoke affects respiratory health. Section 1 is contained within `home_price_and_smoke` (data sourced from `load_Census_house_data`) while section two is contained within `mortality_estimation`, which piggybacks off the notebooks contained in the directory `smoke_estimated_and_AQI`.  
 
 ## Breakdown of Individual Python Notebooks
 1. `home_price_and_smoke`: This notebook explores the relationship between historic median house prices and wildfire smoke.
