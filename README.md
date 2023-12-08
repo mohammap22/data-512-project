@@ -16,11 +16,19 @@ There are numerous sources of data used in this project:
 4. County-wise wildfire smoke levels in the US: [source](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CTWGWE)
 5. US EPA AQI levels: [further information](https://aqs.epa.gov/aqsweb/documents/data_api.html)
 
+### Data Structures
+Below is a breakdown of the primary (used) features of the 5 main sources of data:
+1. `Historic Wildfire Dataset`: Large GEOJson fire where each object contains information on the fire year (string), type (list of strings), size of the burned region (integer), and boundary of the fire (list of coordinates).
+2. `US Census Data`: Large CSV where each row contains MedianHouseValue (integer), State (String), County (String)
+3.  `Mortality Data`: Small data frame where each row contains All Causes (int), CVD (int), Respiratory (int), Despair (int), Covid-19 (int)
+4.  `County-Wise Smoke Estimations`: Large CSV containing State (fips integer), County (fips integer), low (integer), medium (integer), heavy (integer), Year (integer)
+5.  `US EPA AQI`: Large JSON object containing Year (int), Pollutant Type (string), aqi (int)
+
 ## Data Processing
 Each Python notebook file includes code on how to load or create used data sources. Two datasets need to be downloaded as CSVs, those are numbers 1 and 4 in the `Data Acquisition` section. You can download these CSV files using the links provided. 
 
 ## Requirements
-Python 3.x, matplotlib, NumPy, Requests, defaultdict, and Pandas
+Python 3.x, matplotlib, NumPy, Requests, defaultdict, and Pandas, time, shapely, re, and collections
 
 ## License and Terms of Use
 The data is sourced from Wikipedia under the Wikimedia Foundation's terms. Please review the Wikimedia Foundation REST API [terms of use](https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions) for more details.
