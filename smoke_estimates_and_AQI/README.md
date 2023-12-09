@@ -18,7 +18,7 @@ Need Python installed on the system with pandas, json, time, and requests, sklea
 - Both of these JSONs are in the same format. Each key pertains to the year, from 1975 to 2023. Here is a sample value for the year 1986 in `particulate_aqi_data.json`: `"1986": {"0001": {"local_site_name": null, "site_address": "200 W. OAK ST.", "state": "Colorado", "county": "Larimer", "city": "Fort Collins", "pollutant_type": {"81102": {"parameter_name": "PM10 Total 0-10um STP", "units_of_measure": "Micrograms/cubic meter (25 C)", "method": "HI-VOL-SA321A - GRAVIMETRIC", "data": {"19860502": [{"sample_duration": "24 HOUR", "observation_count": 1, "arithmetic_mean": 53.0, "aqi": 49}]`. As one can see, we have data on both the exact date and AQI amount. 
 
 ### General Files
-`Reader.py`: This is a library **not created by me** used to read the USGS wildfire data.
+`Reader.py`: This is a library **not created by me** (created by David W. McDonald) used to read the USGS wildfire data.
 `project.ipynb`: This is the jupyter notebook file that covers loading in the wildfire data, making the visualizations, combining the AQI and Wildfire data, and producing the smoke estimate model. 
 `EPA_AQI_DATA_LOAD.ipynb`: This notebook covers how I loaded the AQI data from the EPA
 
